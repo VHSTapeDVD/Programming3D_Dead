@@ -4,13 +4,12 @@ using Unity.Mathematics;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class Movement_Player : MonoBehaviour
+public class CameraMovement_Player : MonoBehaviour
 {
-
     public float SensitivityX;
     public float SensitivityY;
-
-    public Transform LookDirection;
+    [SerializeField] private Transform _playerBody;
+    public Transform Orientation; // Assign the camera's transform to this in the editor
 
     float rotationX;
     float rotationY;
@@ -32,9 +31,7 @@ public class Movement_Player : MonoBehaviour
         rotationY += mouseX;
         rotationX = Mathf.Clamp(rotationX, -90f, 90f);
 
-        transform.localRotation = Quaternion.Euler(rotationX, rotationY, 0);
-        LookDirection.localRotation = Quaternion.Euler(0, rotationY, 0);
-
-
+        transform.rotation = Quaternion.Euler(rotationX, rotationY, 0); // Update the camera's rotation
+        Orientation.rotation = Quaternion.Euler(0, rotationY, 0); // Update the player's body rotation
     }
 }
