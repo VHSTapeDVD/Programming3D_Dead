@@ -5498,7 +5498,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 190.45, y: 2.09, z: 6.43}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9899268, y: 0.9899268, z: 0.9899268}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1460576405}
@@ -5519,8 +5519,8 @@ MonoBehaviour:
   Camera: {fileID: 330585546}
   Hachet: {fileID: 6623966471625866112, guid: 4e5b5046fe3e3e14da17f95bcc35377f, type: 3}
   ThrowPoint: {fileID: 1004314999}
-  NumberOfHachets: 7
-  Throwcooldown: 0.1
+  NumberOfHachets: 100
+  Throwcooldown: 3
   ThrowKey: 324
   ThrowForce: 50
   ThrowForceUp: 5
