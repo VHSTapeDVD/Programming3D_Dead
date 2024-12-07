@@ -966,7 +966,9 @@ Transform:
   m_LocalPosition: {x: -0.05, y: 0.6, z: -0.036}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1601671927}
+  - {fileID: 1004314999}
   m_Father: {fileID: 1667971314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &330585547
@@ -2954,6 +2956,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 669dd5209c6df984797464d6761665bf, type: 3}
+--- !u!1 &1004314998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1004314999}
+  m_Layer: 0
+  m_Name: HachetSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1004314999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004314998}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.483, y: -0.5, z: 0.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 330585546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1091273087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4108,6 +4141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1491702116}
+  - component: {fileID: 1491702117}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4131,6 +4165,26 @@ Transform:
   - {fileID: 1460576405}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1491702117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491702115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bed9fe4830a73743b2cf7d8c4241e2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 330585546}
+  Hachet: {fileID: 6623966471625866112, guid: 4e5b5046fe3e3e14da17f95bcc35377f, type: 3}
+  ThrowPoint: {fileID: 1004314999}
+  NumberOfHachets: 7
+  Throwcooldown: 0.1
+  ThrowKey: 324
+  ThrowForce: 50
+  ThrowForceUp: 5
 --- !u!1001 &1539855605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4335,6 +4389,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 669dd5209c6df984797464d6761665bf, type: 3}
+--- !u!4 &1601671927 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5811577310010876218, guid: 4e5b5046fe3e3e14da17f95bcc35377f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1641368117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1605535197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4539,6 +4599,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 669dd5209c6df984797464d6761665bf, type: 3}
+--- !u!1001 &1641368117
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 330585546}
+    m_Modifications:
+    - target: {fileID: 5811577310010876218, guid: 4e5b5046fe3e3e14da17f95bcc35377f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.059994508
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811577310010876218, guid: 4e5b5046fe3e3e14da17f95bcc35377f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811577310010876218, guid: 4e5b5046fe3e3e14da17f95bcc35377f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.35600019
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811577310010876218, guid: 4e5b5046fe3e3e14da17f95bcc35377f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.10089203
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811577310010876218, guid: 4e5b5046fe3e3e14da17f95bcc35377f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.02219882
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811577310010876218, guid: 4e5b5046fe3e3e14da17f95bcc35377f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9714139
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811577310010876218, guid: 4e5b5046fe3e3e14da17f95bcc35377f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.21373588
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811577310010876218, guid: 4e5b5046fe3e3e14da17f95bcc35377f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -24.253
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811577310010876218, guid: 4e5b5046fe3e3e14da17f95bcc35377f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 193.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811577310010876218, guid: 4e5b5046fe3e3e14da17f95bcc35377f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -5.429
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623966471625866112, guid: 4e5b5046fe3e3e14da17f95bcc35377f,
+        type: 3}
+      propertyPath: m_Name
+      value: Hacthet
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3557017242205961839, guid: 4e5b5046fe3e3e14da17f95bcc35377f, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e5b5046fe3e3e14da17f95bcc35377f, type: 3}
 --- !u!1001 &1642170539
 PrefabInstance:
   m_ObjectHideFlags: 0

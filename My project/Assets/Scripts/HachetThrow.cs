@@ -34,11 +34,21 @@ public class HachetThrow : MonoBehaviour
     void ThrowHachet()
     {
         CanThrow = false;
-        GameObject Proctectile = Instantiate(Hachet, ThrowPoint.position, Camera.rotation);
+        GameObject Proctectile = Instantiate(Hachet, ThrowPoint.position, Quaternion.LookRotation(Camera.transform.forward));
 
         Rigidbody ProctectileRB = Proctectile.GetComponent<Rigidbody>();
 
-        Vector3 forceToAdd = Camera.transform.forward * ThrowForce+ Camera.transform.up * ThrowForceUp;
+
+        Vector3 forceDirection = Camera.transform.forward;
+
+        RaycastHit hit;
+
+        if(Physics.Raycast(Camera.position, Camera.forward, out hit, 500f))
+        {
+            forceDirection = (hit.point - ThrowPoint.position).normalized;
+        }
+
+        Vector3 forceToAdd = forceDirection * ThrowForce + Camera.transform.up * ThrowForceUp;
 
         ProctectileRB.AddForce(forceToAdd, ForceMode.Impulse);
 
