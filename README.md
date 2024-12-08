@@ -1,2 +1,2 @@
 # Programming3D_Dead
-This is a bad recreation of dead by daylight
+The general idea for this project was to replicate one map in dead by daylight, where you as the player would play the killer role. The killer has the job of kill survivors, by removing their health while, the survivors try to hide and run away form you. To be able to hit survivors the killer can throw hatchets or hit them with an axe. When all survivors have been killed the game ends. Survivors will run away from the killer when they spot them else, they will wander around the map. The controls for the game are WASD for movement. You look around with the camera using a mouse. You swing the axe on the left mouse button and throw hatchets by clicking the right mouse button.
