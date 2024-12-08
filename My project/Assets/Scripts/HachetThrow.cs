@@ -34,7 +34,7 @@ public class HachetThrow : MonoBehaviour
     void ThrowHachet()
     {
         CanThrow = false;
-        GameObject Proctectile = Instantiate(Hachet, ThrowPoint.position, Quaternion.LookRotation(Camera.transform.forward));
+        GameObject Proctectile = Instantiate(Hachet, ThrowPoint.position, Quaternion.LookRotation(-Camera.transform.forward));
 
         Rigidbody ProctectileRB = Proctectile.GetComponent<Rigidbody>();
 

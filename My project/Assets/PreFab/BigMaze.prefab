@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3472929302658665502}
   - component: {fileID: 5843817774412768320}
   - component: {fileID: 7888665255815965132}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 5250731193881343791}
   - component: {fileID: 1450490330911172193}
   - component: {fileID: 7402987675742766246}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 2366925642879449435}
   - component: {fileID: 2869277643218464742}
   - component: {fileID: 1595059116490614574}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 2841867290900461830}
   - component: {fileID: 6637823180781271635}
   - component: {fileID: 125608484954520888}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 6968538117025481600}
   - component: {fileID: 7848426416765779597}
   - component: {fileID: 9571324077263958}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 6355799811744746963}
   - component: {fileID: 4111473695897312858}
   - component: {fileID: 121202670500493340}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -639,7 +639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8422248657005997347}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BigMaze
   m_TagString: Untagged
   m_Icon: {fileID: 0}

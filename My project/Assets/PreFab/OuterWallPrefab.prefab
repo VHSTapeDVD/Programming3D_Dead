@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6004725408302299885}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OuterWallPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 134276807512399699}
   - component: {fileID: 8100373691721990006}
   - component: {fileID: 1321482451922218839}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 7904987699256622951}
   - component: {fileID: 2422475665785589192}
   - component: {fileID: 5482625652066550489}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OuterWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 7640650043207849599}
   - component: {fileID: 1056237327069176511}
   - component: {fileID: 1443960137515454216}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

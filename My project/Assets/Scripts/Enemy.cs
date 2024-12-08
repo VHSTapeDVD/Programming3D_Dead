@@ -77,6 +77,19 @@ public class Enemy : MonoBehaviour
 
     private void PickUpEnemy()
     {
+        agent.enabled = false;
+        GetComponent<Collider>().enabled = false;
+
+        transform.position = player.position + player.forward * 0.0000000001f;
         
     }
+
+    public void AttachToHook(Transform hookTransform)
+{
+    transform.position = hookTransform.position;
+    transform.SetParent(hookTransform);
+    GetComponent<Collider>().enabled = false;
+    GetComponent<Renderer>().enabled = true; // Make sure the enemy is visible
+}
+    
 }

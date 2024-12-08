@@ -40,7 +40,7 @@ public class MovementPlayer : MonoBehaviour
         isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 1f + 0.3f, ThisisGrounded);
 
         PlayerInput();
-        Debug.Log(isGrounded);
+        
        if (isGrounded)
        {
         
